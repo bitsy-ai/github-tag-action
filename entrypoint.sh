@@ -149,6 +149,7 @@ then
 fi 
 
 echo ::set-output name=tag::$new
+echo ::set-output name=old_tag::$pre_tag
 
 # create local git tag
 git tag $new
